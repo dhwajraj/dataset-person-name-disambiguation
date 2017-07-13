@@ -6,15 +6,15 @@ creating a dataset for person name disambiguation using combination of sources l
 ### 1. DBPedia [ref](http://wiki.dbpedia.org/services-resources/datasets/previous-releases/data-set-36)
 ```
 wget http://downloads.dbpedia.org/3.6/en/persondata_en.nt.bz2
-tar -xvf persondata_en.nt.bz2
+bzip2 -d persondata_en.nt.bz2
 wget http://downloads.dbpedia.org/3.6/en/disambiguations_en.nt.bz2
-tar -xvf disambiguations_en.nt.bz2
+bzip2 -d disambiguations_en.nt.bz2
 ```
 
 ### 2. The Paraphrase Database [ref](http://www.cis.upenn.edu/~ccb/ppdb/)
 ```
 wget http://www.cis.upenn.edu/~ccb/ppdb/release-1.0/ppdb-1.0-s-lexical.gz
-guzip ppdb-1.0-s-lexical.gz
+gunzip ppdb-1.0-s-lexical.gz
 wget http://www.cis.upenn.edu/~ccb/ppdb/release-1.0/ppdb-1.0-s-o2m.gz
 gunzip ppdb-1.0-s-o2m.gz
 ```
